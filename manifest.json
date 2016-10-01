@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Qwertee price revealer",
+  "homepage_url": "https://www.davidgouveia.net",
+  "description": "Show all prices for tshirts instead of having to hover them first",
+  "version": "1.0",
+  "content_scripts": [{
+    "matches": ["*://*.qwertee.com/*"],
+    "js": ["content.js"]
+  }],
+  "permissions": ["activeTab"]
+}
